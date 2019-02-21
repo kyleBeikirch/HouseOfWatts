@@ -1,3 +1,4 @@
+import * as React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import Helmet from 'react-helmet';
 import { ServerStyleSheet } from 'styled-components';
@@ -39,12 +40,21 @@ export default class MyDocument extends Document {
     return (
       <html lang="en" {...this.helmetHtmlAttrComponents()}>
         <Head>
+          <title>
+            {this.props.title && this.props.title !== ''
+              ? `${this.props.title} :: House of Watts`
+              : 'House of Watts'}
+          </title>
           <meta name="robots" content="index,follow" />
           <meta httpEquiv="expires" content="10800" />
-          <meta name="generator" content="RAN! 0.9.0" />
           {this.helmetHeadComponents()}
           {AppIcons()}
           {this.props.styleTags}
+          <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900"
+            rel="stylesheet"
+            key="Montserrat"
+          />
         </Head>
         <body>
           <Main />

@@ -6,7 +6,7 @@ export const App = styled.div`
 `;
 
 export const A = styled.a`
-  color: ${props => props.theme.colors.main};
+  color: ${props => props.theme.colors.text};
 
   &:active,
   &:hover {

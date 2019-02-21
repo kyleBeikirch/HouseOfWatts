@@ -16,13 +16,7 @@ type Props = {
 
 const Default = (props: Props) => (
   <App>
-    <Helmet>
-      <title>
-        {props.title && props.title !== ''
-          ? `${props.title} :: RAN! React . GraphQL . Next.js Toolkit`
-          : 'RAN! React . GraphQL . Next.js Toolkit'}
-      </title>
-    </Helmet>
+    <Helmet />
     <Header pathname={props.router.url.pathname} />
     <ProjectInfo />
     {props.children}

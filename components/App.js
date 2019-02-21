@@ -15,7 +15,7 @@ type Props = {
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+    font-family: Montserrat, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
   }
   body {
     margin: 0;

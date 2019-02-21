@@ -34,12 +34,12 @@ themeList.main = {
     center: 'auto'
   },
   colors: {
-    main: '#22BAD9',
+    main: '#FC4C02',
     success: '#5cb85c',
     warn: '#ffc067',
     error: '#d9534f',
     background: '#ffffff',
-    text: '#000000',
+    text: '#606065',
     textAlt: '#ffffff'
   }
 };

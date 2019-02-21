@@ -2,7 +2,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import LinkList from '../LinkList';
-import { Header as StyledHeader, Img } from './styles';
+import { Header as StyledHeader, H1 } from './styles';
 import connect from './store';
 
 type Props = {
@@ -15,10 +15,7 @@ type Props = {
 
 const Header = ({ pathname, authenticated, actions: { logout } }: Props) => (
   <StyledHeader>
-    <Img
-      alt="RAN!"
-      src="https://user-images.githubusercontent.com/694940/29736531-6ab509e8-8a02-11e7-8e61-66e5ea4e29b8.png"
-    />
+    <H1>House of WATTS</H1>
     <LinkList
       pathname={pathname}
       authenticated={authenticated}
